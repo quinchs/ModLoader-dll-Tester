@@ -19,7 +19,9 @@ namespace InternalModding.Assemblies
     {
         public static void LogFormat(string format, params object[] args)
         {
-            Console.WriteLine(format, args);
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("[LOG]" + format, args);
+            Console.ForegroundColor = ConsoleColor.White;
         }
         public static void LogError(object message)
         {
@@ -35,7 +37,9 @@ namespace InternalModding.Assemblies
         }
         public static void Log(object message)
         {
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("[LOG]" + message);
+            Console.ForegroundColor = ConsoleColor.White;
         }
         public static void LogWarning(object message)
         {
