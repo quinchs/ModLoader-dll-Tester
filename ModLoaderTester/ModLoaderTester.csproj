@@ -76,5 +76,14 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL%27s\Assembly-CSharp-firstpass.dll" />
+    <Content Include="DLL%27s\Assembly-CSharp.dll" />
+    <Content Include="DLL%27s\Mono.Cecil.dll" />
+    <Content Include="DLL%27s\Mono.Cecil.Mdb.dll" />
+    <Content Include="DLL%27s\Mono.Cecil.Pdb.dll" />
+    <Content Include="DLL%27s\Mono.Cecil.Rocks.dll" />
+    <Content Include="DLL%27s\UnityEngine.dll" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
